@@ -1,0 +1,71 @@
+2019-07-30 12:24:26 [127.0.0.1][-][-][error][yii\base\ViewNotFoundException] yii\base\ViewNotFoundException: The view file does not exist: C:\OSPanel\domains\intellect\frontend\web\views\site\index.php in C:\OSPanel\domains\intellect\vendor\yiisoft\yii2\base\View.php:233
+Stack trace:
+#0 C:\OSPanel\domains\intellect\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\OSPanel\\doma...', Array, Object(frontend\controllers\SiteController))
+#1 C:\OSPanel\domains\intellect\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('index', Array, Object(frontend\controllers\SiteController))
+#2 C:\OSPanel\domains\intellect\frontend\controllers\SiteController.php(89): yii\base\Controller->render('index')
+#3 [internal function]: frontend\controllers\SiteController->actionIndex()
+#4 C:\OSPanel\domains\intellect\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 C:\OSPanel\domains\intellect\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 C:\OSPanel\domains\intellect\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#7 C:\OSPanel\domains\intellect\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#8 C:\OSPanel\domains\intellect\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\OSPanel\domains\intellect\frontend\web\index.php(17): yii\base\Application->run()
+#10 {main}
+2019-07-30 12:24:25 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'chaport-5d331950b3251d3917665585' => '827112c0-dfdb-4bfd-bd8f-af98256fbbca/HjCG29MdmnX0R2tPyToPk2VTAZCIYUQ9l9saLRe'
+    '_csrf-backend' => '2eddf178e6490b67f29c72e9fc551b3cf052404bb438b0a53c81b20fd5649ecfa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"ffTqN7uspymmpY6OEz2r88JcqmcPGvKe\";}'
+    'advanced-backend' => 'ujibbo0ggg4t6svbtg754a6qh5'
+    '_identity-backend' => 'f17c9233a5f34d270dfd018847e4b5f15c37aa4cb15c3da0a8f3d01e9ac5a5d8a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"F9-07vgRk3z_P6cxVk_8Jy6JW2cmT0G_\",2592000]\";}'
+    '_csrf-frontend' => 'dd49097060a9f3d71e441741f5a73ee965cecf4895c5dfa7e14f85ad83fafa51a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"Yf5mb3p3x_za2cVeuHkpXzd8-jDdhQMr\";}'
+    'advanced-frontend' => '25acbu2u31jkvb066i13vl8dv0'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'intellect'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'uz-UZ,uz;q=0.8,ru-RU;q=0.6,ru;q=0.4,en-US;q=0.2,en;q=0.2'
+    'HTTP_COOKIE' => 'chaport-5d331950b3251d3917665585=827112c0-dfdb-4bfd-bd8f-af98256fbbca%2FHjCG29MdmnX0R2tPyToPk2VTAZCIYUQ9l9saLRe; _csrf-backend=2eddf178e6490b67f29c72e9fc551b3cf052404bb438b0a53c81b20fd5649ecfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22ffTqN7uspymmpY6OEz2r88JcqmcPGvKe%22%3B%7D; advanced-backend=ujibbo0ggg4t6svbtg754a6qh5; _identity-backend=f17c9233a5f34d270dfd018847e4b5f15c37aa4cb15c3da0a8f3d01e9ac5a5d8a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22F9-07vgRk3z_P6cxVk_8Jy6JW2cmT0G_%22%2C2592000%5D%22%3B%7D; _csrf-frontend=dd49097060a9f3d71e441741f5a73ee965cecf4895c5dfa7e14f85ad83fafa51a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22Yf5mb3p3x_za2cVeuHkpXzd8-jDdhQMr%22%3B%7D; advanced-frontend=25acbu2u31jkvb066i13vl8dv0'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.0-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.0-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.0-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.0-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.6\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'intellect'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/intellect'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/intellect'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/intellect/frontend/web/index.php'
+    'REMOTE_PORT' => '65022'
+    'REDIRECT_URL' => '/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1564478665.141
+    'REQUEST_TIME' => 1564478665
+    'argv' => []
+    'argc' => 0
+]

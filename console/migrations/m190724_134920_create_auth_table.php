@@ -1,0 +1,40 @@
+<?php
+
+use yii\db\Migration;
+
+/**
+ * Handles the creation of table `{{%auth}}`.
+ */
+class m190724_134920_create_auth_table extends Migration
+{
+    /**
+     * {@inheritdoc}
+     */
+    public function safeUp()
+    {
+        $this->createTable('{{%auth}}', [
+            'id' => $this->primaryKey(),
+            'user_id' => $this->integer()->notNull()->unsigned(),
+            'source' => $this->string()->notNull(),
+            'source_id' => $this->string()->notNull(),
+        ]);
+        $this->addForeignKey(
+             'fk-auth-user_id-user-id',
+             'auth',
+             'user_id',
+             'user',
+             'id',
+             'CASCADE',
+             'CASCADE'
+            );
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function safeDown()
+    {
+        $this->dropTable('{{%auth}}');
+        $this->dropTable('{{%user}}');
+    }
+}

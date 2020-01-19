@@ -1,0 +1,3 @@
+[submodule "intellect-club"]
+	path = intellect-club
+	url = https://github.com/KichkinaDeveloper/iclub.git
